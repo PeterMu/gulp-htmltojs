@@ -19,7 +19,7 @@ npm install gulp-htmltojs --save-dev
 
 ```
 var gulp = require('gulp')
-var html2js = require('gulp-html2js')
+var html2js = require('gulp-htmltojs')
     
 gulp.task('html2js', function(){
     return gulp.src('src/test/**/*.html')
