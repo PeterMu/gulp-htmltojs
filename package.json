@@ -1,11 +1,11 @@
 {
   "name": "gulp-htmltojs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "将html模板文件转为js模块",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:PeterMu/gulp-html2js.git"
+    "url": "git@github.com:PeterMu/gulp-htmltojs.git"
   },
   "keywords": [
     "gulp",
@@ -16,9 +16,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PeterMu/gulp-html2js/issues"
+    "url": "https://github.com/PeterMu/gulp-htmltojs/issues"
   },
-  "homepage": "https://github.com/PeterMu/html2js",
+  "homepage": "https://github.com/PeterMu",
   "devDependencies": {
     "gulp": "^3.9.0"
   },
