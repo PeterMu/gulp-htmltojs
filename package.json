@@ -1,5 +1,5 @@
 {
-  "name": "gulp-html2js",
+  "name": "gulp-htmltojs",
   "version": "0.1.0",
   "description": "将html模板文件转为js模块",
   "main": "index.js",

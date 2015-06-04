@@ -1,11 +1,11 @@
-# gulp-html2js
+# gulp-htmltojs
 
 > 将html模板转换为js模块的gulp插件
 
 ## Install
 
 ```
-npm install gulp-html2js --save-dev
+npm install gulp-htmltojs --save-dev
 ```
 
 ## Usage
