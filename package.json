@@ -1,11 +1,11 @@
 {
   "name": "gulp-htmltojs",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "将html模板文件转为js模块",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:PeterMu/gulp-htmltojs.git"
+    "url": "git+ssh://git@github.com/PeterMu/gulp-htmltojs.git"
   },
   "keywords": [
     "gulp",
@@ -25,5 +25,13 @@
   "dependencies": {
     "gulp-util": "^3.0.5",
     "through2": "^0.6.5"
-  }
+  },
+  "readme": "# gulp-htmltojs\n\n> 将html模板转换为js模块的gulp插件\n\n## Install\n\n```\nnpm install gulp-htmltojs --save-dev\n```\n\n## Usage\n\n### 使用场景\n\n前端开发的时候require加载各种html模板，如果把html模板转换为js模块，就可以像\n加载js模块一样加载html模板。\n\n### 使用样例\n\n```\nvar gulp = require('gulp')\nvar html2js = require('gulp-htmltojs')\n    \ngulp.task('html2js', function(){\n    return gulp.src('src/test/**/*.html')\n        .pipe(html2js())\n})\n\ngulp.task('watch', ['html2js'], function(){\n    gulp.watch('src/test/**/*.html', ['html2js'])\n})\n```\n### 转换规则\n\nhtml模块 a.html\n```\n<div>\n  <h1>Hello World!</h1>\n</div>\n```\n转换后， 会在同级目录下生成 a.html.js\n\n```\ndefine(function(require){ return '<div>  <h1>Hello World!</h1></div>'})\n```\n\n### 运行\n```\ngulp watch\n```\n运行完成后，会打印转换日志：\n```\n[14:29:43] compile: /work/gulp/templates/a.html\n[14:29:43] compile: /work/gulp/templates/b.html\n[14:29:43] compile: /work/gulp/templates/c.html\n```\n\n## Release Notes\n\n### v1.0.0\n\n在生产环境验证通过，发布v1.0.0\n\n\n## License\n\nMIT @ [Peter Mu](https://github.com/PeterMu)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "96254bb275bedd56e41d35d959731ffc8539310f",
+  "_id": "gulp-htmltojs@1.0.0",
+  "scripts": {},
+  "_shasum": "93643de7de5d3939027328ba51cacbde0e8a13de",
+  "_from": "gulp-htmltojs",
+  "_resolved": "file:gulp-htmltojs"
 }

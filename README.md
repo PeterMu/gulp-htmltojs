@@ -55,6 +55,12 @@ gulp watch
 [14:29:43] compile: /work/gulp/templates/c.html
 ```
 
+## Release Notes
+
+### v1.0.0
+
+在生产环境验证通过，发布v1.0.0
+
 
 ## License
 
