@@ -19,6 +19,15 @@ function checkExist(path){
     }
 }
 
+function removeSpace(content){
+    var lines = content.split(/[\r\n]/g)
+    var result = []
+    for(var i=0,l=lines.length; i<l; i++){
+        result.push(lines[i].trim())
+    }
+    return result.join('')
+}
+
 /*
  * 插件入口函数
  */
@@ -32,7 +41,7 @@ function html2js(){
         		return callback()
         	}
         	var tpl = file.contents.toString()
-		    tpl = tpl.replace(/[\r\n]/g,"")
+            tpl = removeSpace(tpl)
 		    tpl = tpl.replace(/\"/g,"\\\"")
 		    tpl = tpl.replace(/\'/g,"\\'")
 		    tpl = tpl.trim()

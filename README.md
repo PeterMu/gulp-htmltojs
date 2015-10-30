@@ -41,7 +41,7 @@ html模块 a.html
 转换后， 会在同级目录下生成 a.html.js
 
 ```
-define(function(require){ return '<div>  <h1>Hello World!</h1></div>'})
+define(function(require){ return '<div><h1>Hello World!</h1></div>'})
 ```
 
 ### 运行
@@ -56,6 +56,10 @@ gulp watch
 ```
 
 ## Release Notes
+
+### v1.1.0
+
+在转换为js模块时，去除每行html代码首尾多余空格
 
 ### v1.0.0
 

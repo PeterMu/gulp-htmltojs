@@ -1,6 +1,6 @@
 {
   "name": "gulp-htmltojs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "将html模板文件转为js模块",
   "main": "index.js",
   "repository": {

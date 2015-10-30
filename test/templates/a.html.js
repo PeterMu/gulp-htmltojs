@@ -1,1 +1,1 @@
-define(function(require){ return '<div>  <h1>Hello World!</h1></div>'})
+define(function(require){ return '<div class=\"test\"><h1>Hello World!</h1></div>'})
