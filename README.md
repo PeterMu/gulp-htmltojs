@@ -1,4 +1,5 @@
-# gulp-htmltojs
+# gulp-htmltojs  [![npm](https://img.shields.io/npm/v/gulp-htmltojs.svg)](https://www.npmjs.com/package/gulp-htmltojs)  [![npm](https://img.shields.io/npm/dt/gulp-htmltojs.svg)](https://www.npmjs.com/package/gulp-htmltojs)
+
 
 > 将html模板转换为js模块的gulp插件
 
